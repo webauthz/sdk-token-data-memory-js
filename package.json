@@ -1,0 +1,54 @@
+{
+  "name": "@webauthz/sdk-token-data-memory-js",
+  "version": "1.0.0",
+  "description": "In-memory storage for Webauthz Token",
+  "main": "dist/main.umd.js",
+  "module": "src/main",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "clean": "exit 0",
+    "build": "rollup src/main.js --file dist/main.umd.js --format umd --name WebauthzTokenMemoryDatabase",
+    "lint": "eslint --fix src/**",
+    "deps": "exit 0",
+    "pkg": "exit 0",
+    "start": "exit 0",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webauthz/sdk-token-data-memory-js.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "cryptium",
+    "webauthz",
+    "sdk"
+  ],
+  "author": "Webauthz (https://webauthz.org)",
+  "contributors": [
+    "Jonathan Buhacoff <jonathan@cryptium.com> (https://github.com/jbuhacoff)"
+  ],
+  "bugs": {
+    "url": "https://github.com/webauthz/sdk-token-data-memory-js/issues"
+  },
+  "homepage": "https://github.com/webauthz/sdk-token-data-memory-js#readme",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@libertyio/commitlint-config": "^1.0.0",
+    "@libertyio/commitlint-config-type-enum": "^1.0.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.8",
+    "rollup": "^2.36.2"
+  },
+  "dependencies": {
+    "@libertyio/data-collection-memory-js": "^0.2.0"
+  }
+}
